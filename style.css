@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+li {
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+.works {
+  display: none;
+  margin-left: 1rem;
+  list-style-type: circle;
+}

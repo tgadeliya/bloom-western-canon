@@ -1,1 +1,0 @@
-# bloom-western-canon

@@ -1,0 +1,49 @@
+/* style.css additions for collapsibility */
+
+.collapsible-title {
+    cursor: pointer;
+    user-select: none; /* Prevents text selection on click/double-click */
+    padding: 5px 0; /* Add some padding for easier clicking */
+    /* display: flex; /* If you want indicator on the same line and control alignment */
+    /* align-items: center; */
+}
+
+.collapsible-title .collapse-indicator {
+    display: inline-block;
+    margin-left: 8px; /* Space out the indicator */
+    font-size: 0.9em;
+    width: 1em; /* Ensures consistent spacing for the indicator */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* No need for .is-collapsed .collapse-indicator specific transform if just changing text content */
+/* If using CSS transform for rotation, you'd do:
+.collapsible-title.is-collapsed .collapse-indicator {
+    transform: rotate(-90deg);
+}
+*/
+
+.collapsible-content.collapsed {
+    display: none;
+}
+
+/* Adjust margins for nested content if they look too cramped or too spaced out */
+.epoch-group > .collapsible-content { /* This is epochContentContainer */
+    padding-left: 15px; /* Indent countries */
+}
+
+.country-group > .collapsible-content { /* This is countryContentContainer */
+    padding-left: 15px; /* Indent authors further */
+}
+
+.author-group > ul.collapsible-content { /* This is bookUl */
+    padding-left: 15px; /* Indent books further */
+    /* The existing ul padding-left might be sufficient, adjust as needed */
+}
+
+/* Optional: Style for when a title is active/focused */
+/*
+.collapsible-title:hover {
+    background-color: #f0f0f0;
+}
+*/

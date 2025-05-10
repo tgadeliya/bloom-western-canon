@@ -47,3 +47,11 @@
     background-color: #f0f0f0;
 }
 */
+
+/* From your existing style.css */
+.container {
+    display: flex;
+    max-width: 1200px; /* This sets a maximum width */
+    margin: 40px 600px;  /* This is the key for horizontal centering */
+    padding: 50 20px;
+}

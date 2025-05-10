@@ -1,6 +1,6 @@
 import json
 
-data = json.load(open("books_data.json"))
+data = json.load(open("../books_structured.json"))
 
 new_data = []
 c = 0
@@ -18,5 +18,5 @@ for epoch, v in data.items():
                 c+= 1
                 new_data.append(entry)    
 
-with open("books.json", "w", encoding="utf-8") as f:
+with open("../books.json", "w", encoding="utf-8") as f:
     json.dump(new_data,f,indent=4, ensure_ascii=False)

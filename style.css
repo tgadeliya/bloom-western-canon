@@ -1,9 +1,8 @@
-/* style.css additions for collapsibility */
 
 .collapsible-title {
-    cursor: pointer;
-    user-select: none; /* Prevents text selection on click/double-click */
-    padding: 5px 0; /* Add some padding for easier clicking */
+    cursor: progress;
+    user-select: none; /*Prevents text selection on click/double-click */
+    padding: 10px 0; /* Add some padding for easier clicking */
     /* display: flex; /* If you want indicator on the same line and control alignment */
     /* align-items: center; */
 }
@@ -12,7 +11,7 @@
     display: inline-block;
     margin-left: 8px; /* Space out the indicator */
     font-size: 0.9em;
-    width: 1em; /* Ensures consistent spacing for the indicator */
+    width: em; /* Ensures consistent spacing for the indicator */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -51,9 +50,9 @@
 /* From your existing style.css */
 .container {
     display: flex;
-    max-width: 1200px; /* This sets a maximum width */
-    margin: 40px 600px;  /* This is the key for horizontal centering */
-    padding: 50 20px;
+    max-width: 50%; /* This sets a maximum width */
+    margin: 5% 20% 40% 40%;
+    padding: 10px 0px;
     font-family: monospace;
 }
 
@@ -62,7 +61,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-left: 40%;
+    text-align:  center;
+    margin-left: 30%;
 }
 
 li {

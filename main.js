@@ -139,7 +139,7 @@ async function displayBooks() {
                         }
                         bookLi.dataset.bookId = book.id; 
 
-                        let statusDisplay = '';
+                        let statusDisplay = ' ';
                         if (book.status) {
                             statusDisplay = `<span class="book-status">(${book.status})</span>`;
                         }

@@ -1,4 +1,17 @@
 
+@font-face {
+    font-family: 'Helmswald'; /* Choose a name for your font family */
+    src: url('fonts/Helmswald.otf') format('opentype'); /* Path to your font file */
+    /* You can add font-weight and font-style here if you have different files for bold/italic etc. */
+    /* font-weight: normal; */
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: 'Alegreya'; /* Choose a name for your font family */
+    src: url('fonts/AlegreyaSC-Black.ttf');
+}
+
 .collapsible-title {
     cursor: progress;
     user-select: none; /*Prevents text selection on click/double-click */
@@ -11,16 +24,7 @@
     display: inline-block;
     margin-left: 8px; /* Space out the indicator */
     font-size: 0.9em;
-    width: em; /* Ensures consistent spacing for the indicator */
-    transition: transform 0.2s ease-in-out;
 }
-
-/* No need for .is-collapsed .collapse-indicator specific transform if just changing text content */
-/* If using CSS transform for rotation, you'd do:
-.collapsible-title.is-collapsed .collapse-indicator {
-    transform: rotate(-90deg);
-}
-*/
 
 .collapsible-content.collapsed {
     display: none;
@@ -40,49 +44,73 @@
     /* The existing ul padding-left might be sufficient, adjust as needed */
 }
 
-/* Optional: Style for when a title is active/focused */
-/*
-.collapsible-title:hover {
-    background-color: #f0f0f0;
-}
-*/
-
 /* From your existing style.css */
 .container {
     display: flex;
     max-width: 50%; /* This sets a maximum width */
     margin: 5% 20% 40% 40%;
     padding: 10px 0px;
-    font-family: monospace;
+    font-family: "Alegreya";
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
+body {
+    background-color: #CFC9B1;
+    color: #11437A;
+}
+
+/* ul {
+    /* list-style-type: none; */
+    /* margin: 0;
     padding: 0;
     overflow: hidden;
-    text-align:  center;
-    margin-left: 30%;
-}
+    text-align:  left;
+} */
 
-li {
-    float: left;
-}
-
-li a {
-    display: inline-block;
+/* li a {
     color: black;
     font-weight: bold;
     font-size:large;
-    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 20px;
     text-decoration: none;
-}
+} */
 
-p {
+/* p {
     font-family: monospace;
     font-size: 20px;
     font-weight: bolder;
     display: inline-block;
+} */
+
+header {
+     text-align:  center;
+     padding: 10px 0px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    align-content: center;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+nav li {    
+    float: left;
+}
+
+li a:hover {
+  background-color: #C8B69E;
+}
+
+nav li a {
+    display: block;
+    padding: 10px;
+    color: #11437A;
+    font-size: large;
+    /* font-weight: bold; */
+    text-decoration: none;
+    font-family: "Helmswald";
 }
